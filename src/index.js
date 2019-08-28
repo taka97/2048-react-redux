@@ -1,15 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Provider from 'react-redux';
-import Game from './containers/Game';
-import store from './store';
+import Root from './containers/Root';
 
-import './styles/index.scss';
+import './index.css';
 
 // eslint-disable-next-line react/jsx-filename-extension
-ReactDOM.render(
-  <Provider store={store}>
-    <Game />
-  </Provider>,
-  document.getElementById('root')
-);
+ReactDOM.render(<Root />, document.getElementById('root'));
